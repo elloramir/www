@@ -1,10 +1,11 @@
 <script>
 	import Thumb from './Thumb.svelte';
+	import Ellora from './Ellora.svelte';
 </script>
 
 <main>
 	<header class="presentation">
-		<h1>Elloramir</h1>
+		<Ellora />
 		<p>What is a programmer?<br>A miserable little pile of code.</p>
 
 		<nav class="external-links">
@@ -22,9 +23,9 @@
 
 	<section class="projects">
 		<Thumb project="Perfect Circle" />
-		<Thumb project="Project two asdasdasd asdasdasdasd" />
-		<Thumb project="Hello sailor" />
-		<Thumb project="Hello from no wher asd asd asdasdasdasdasdae" />
+		<Thumb project="Music Visualizer" />
+		<Thumb project="To be defined" />
+		<Thumb project="To be defined" />
 	</section>
 </main>
 
@@ -33,57 +34,52 @@
 </div>
 
 <style>
-	:global(body) {
-		background-color: rgb(245, 239, 229);
-		color: black;
-	}
+:global(body) {
+	background-color: rgb(245, 239, 229);
+	color: black;
+}
 
-	main {
-		width: 100%;
-		max-width: 900px;
-		margin: 0 auto;
-	}
+main {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
 
-	.presentation {
-		text-align: center;
-	}
+.presentation {
+	text-align: center;
+}
 
-	.presentation h1 {
-		font-family: 'Comic Sans MS', cursive, sans-serif;
-		font-size: 3rem;
-	}
+.presentation p {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.2rem;
+}
 
-	.presentation p {
-		font-family: 'Courier New', Courier, monospace;
-		font-size: 1.2rem;
-	}
+.external-links {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin: 30px 0 50px 0;
+}
 
-	.external-links {
-		display: flex;
-		justify-content: center;
-		gap: 2rem;
-		margin: 30px 0 50px 0;
-	}
+.external-links a {
+	border-bottom: 2px dashed rgba(0, 0, 0, 0.267);
+}
 
-	.external-links a {
-		border-bottom: 2px dashed rgba(0, 0, 0, 0.267);
-	}
+.external-links img {
+	width: 80px;
+}
 
-	.external-links img {
-		width: 80px;
-	}
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
 
-	.projects {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
-	}
-
-	/* @NOTE: Since icons8 said we need to, WE NEED TO! */
-	.credits {
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		padding: 10px;
-	}
+/* @NOTE: Since icons8 said we need to, WE NEED TO! */
+.credits {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+}
 </style>
