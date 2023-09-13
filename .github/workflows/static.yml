@@ -29,9 +29,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Update environment URL
-        run: |
-          echo "GITHUB_PAGES_URL=${{ steps.deployment.outputs.page_url }}" >> $GITHUB_ENV
+      - name: Override page_url
+        id: change-page-url
+        run: echo "new_page_url=${{ steps.deployment.outputs.page_url }}notebook/" >> $GITHUB_OUTPUT
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
