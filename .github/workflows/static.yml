@@ -1,10 +1,11 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Simple workflow for deploying static content from the 'dist' folder to GitHub Pages
 name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches:
+      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,10 +35,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
-          # Upload entire repository
-          path: './dist'
+          # Upload the contents of the 'dist' folder
+          path: dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          # Specify the source directory as 'dist'
+          source-directory: dist
