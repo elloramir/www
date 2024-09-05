@@ -4,7 +4,7 @@ const path = require('path');
 const config = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
   },
   module: {
@@ -27,7 +27,7 @@ const config = {
     ]
   },
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'public'),
   },
 };
 
