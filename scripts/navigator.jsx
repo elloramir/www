@@ -9,10 +9,12 @@ function Navigator() {
 
     const navMap = [
         <Blog />,
+        <Projects />,
+        <Cats />,
     ];
 
     return (
-        <div className="col-lg-6 pb-5">
+        <div className="col-lg-6 pb-5 right-bar">
             <div className="navigator mt-4">
                 <ul className="nav h5 d-flex justify-content-center flex-wrap">
                     {
@@ -20,7 +22,7 @@ function Navigator() {
                             <li key={index} className="nav-item" onClick={() => setActive(index)} >
                                 <a
                                     className={"nav-link text-black" + (index === active ? " active" : "")}
-                                    href="#"
+                                    role="button"
                                 >
                                     { name }
                                 </a>
