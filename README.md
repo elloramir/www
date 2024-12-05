@@ -1,0 +1,2 @@
+### Important note
+This project does not run in a Node environment, so the Babel plugin is actually operating in development mode. - **Why?** Glad you asked! Because it's fun! Even though the module importer doesn't work and it might feel like building sites the prehistoric way, it's still a cool to use React like in a "vanilla" style.
