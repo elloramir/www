@@ -1,5 +1,5 @@
 <script>
-    export let name = 'UNAMED';
+    export let name = 'UNNAMED';
 
     const gibbers = [
         'Butterfly', 'Chocolate', 'Dangerous',
