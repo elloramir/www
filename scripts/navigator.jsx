@@ -12,9 +12,9 @@ function Navigator() {
     ];
 
     return (
-        <div className="col-sm-6">
+        <div className="col-lg-6 pb-5">
             <div className="navigator mt-4">
-                <ul className="nav h5">
+                <ul className="nav h5 d-flex justify-content-center flex-wrap">
                     {
                         options.map((name, index) => (
                             <li key={index} className="nav-item" onClick={() => setActive(index)} >

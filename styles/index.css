@@ -21,6 +21,16 @@
 	border: 5px solid white;
 }
 
+.header .anim-updown {
+    animation: animScroll 2s ease-in-out infinite;
+}
+
+@keyframes animScroll {
+    0%   { transform: translateY(0);    }
+    50%  { transform: translateY(20px); }
+    100% { transform: translateY(0);    }
+}
+
 .navigator {
     display: grid;
     justify-content: center;

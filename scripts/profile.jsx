@@ -1,6 +1,6 @@
 function Profile() {
 	return (
-		<div className="col-sm-6 header">
+		<div className="col-lg-6 header">
 	        <div className="text-center">
 	            <img className="profile" src="../images/profile.png" alt="Elloramir's profile picture" />
 	            <h1 className="text-white">Elloramir</h1>
@@ -17,6 +17,10 @@ function Profile() {
 	                    <i className="bi bi-twitter"></i>
 	                </a>
 	            </div>
+	        </div>
+
+	        <div className="d-lg-none anim-updown">
+	        	<i className="bi bi-hand-index-thumb text-white h1"></i>
 	        </div>
 	    </div>
 	)
