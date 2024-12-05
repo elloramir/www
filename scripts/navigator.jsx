@@ -14,14 +14,14 @@ function Navigator() {
     ];
 
     return (
-        <div className="col-lg-6 pb-5 right-bar">
+        <div className="col-lg-8 pb-5 right-bar">
             <div className="navigator mt-4">
-                <ul className="nav h5 d-flex justify-content-center flex-wrap">
+                <ul className="nav h5 d-flex justify-content-center flex-wrap border-bottom">
                     {
                         options.map((name, index) => (
                             <li key={index} className="nav-item" onClick={() => setActive(index)} >
                                 <a
-                                    className={"nav-link text-black" + (index === active ? " active" : "")}
+                                    className={"nav-link text-black pb-3" + (index === active ? " active" : "")}
                                     role="button"
                                 >
                                     { name }
