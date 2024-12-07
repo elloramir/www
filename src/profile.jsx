@@ -1,3 +1,6 @@
+import React from 'react';
+
+export default
 function Profile() {
 	return (
 		<div className="col-lg-4 header">
