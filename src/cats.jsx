@@ -1,18 +1,8 @@
 import React from "react";
+import posts from "./data/cats.json";
 
 export default
 function Cats() {
-	const posts = [
-		{
-			name: "Miu",
-			image: "https://i.imgur.com/y9TFow8.png",
-		},
-		{
-			name: "Rita",
-			image: "https://i.imgur.com/Kc6pQKI.jpeg",
-		},
-	];
-
 	return (
 		<>
 		{
