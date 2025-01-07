@@ -1,5 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import Profile from "./profile.jsx";
 import Navigator from "./navigator.jsx";
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import Blog from './blog.jsx';
 import Projects from './projects.jsx';
 import Cats from './cats.jsx';

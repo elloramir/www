@@ -1,4 +1,3 @@
-import React from "react";
 import posts from "./data/cats.json";
 
 export default

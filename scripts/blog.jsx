@@ -1,10 +1,9 @@
-import React from "react";
 import posts from "./data/blog.json";
 
 export default
 function Blog() {
 	return (
-		<>
+		<div>
 		{
 			posts.map((post, index) => (
 				<div key={index} className="card">
@@ -26,6 +25,6 @@ function Blog() {
 				</div>	
 			))
 		}
-		</>
+		</div>
 	)
 }
